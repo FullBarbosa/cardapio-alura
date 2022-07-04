@@ -1,8 +1,7 @@
-import Cardapio from "./pages/Cardapio";
-
+import Router from './Routes';
 
 export default function App() {
   return (
-    <Cardapio />
-  )
+    <Router />
+  );
 }

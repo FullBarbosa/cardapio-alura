@@ -1,3 +1,3 @@
-import { Buscador } from './Buscador'
+import { Buscador } from './Buscador';
 
-export default Buscador
+export default Buscador;

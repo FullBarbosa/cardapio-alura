@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import cardapio from 'data/cardapio.json';
+import { Cardapio } from 'types/Prato';
 import Item from './Item';
 
 interface IItensProps {
@@ -22,7 +23,7 @@ export function Itens(props: IItensProps) {
     return true;
   };
 
-  const ordenar = (novaLista: typeof cardapio) => {
+  const ordenar = (novaLista: Cardapio) => {
     switch (ordenador) {
       case 'porcao':
         return novaLista.sort((a, b) => (a.size > b.size ? 1 : -1));
